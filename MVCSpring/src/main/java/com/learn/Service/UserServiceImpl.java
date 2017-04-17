@@ -12,6 +12,7 @@ public class UserServiceImpl implements UserService {
 
 	List<User> userList = new ArrayList<User>();
 	public void createUser(User user) {
+		//Testing the checkout
 		User newUser = new User();
 		System.out.println("In UserServiceImpl:"+user.getAge());
 		newUser.setAge(user.getAge());
