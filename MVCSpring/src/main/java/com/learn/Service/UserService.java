@@ -11,4 +11,5 @@ public interface UserService {
 	public List<User> showUSers();
 	
 	public User getUser();
+	public User testGetUser();
 }
