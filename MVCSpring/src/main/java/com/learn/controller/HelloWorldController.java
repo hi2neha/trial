@@ -16,7 +16,7 @@ public class HelloWorldController {
 
 	@Autowired
 	UserService userService;
-	
+	//testing clone******************************
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String sayHello(Model model) {
 		System.out.println("test!!!!!");
@@ -33,7 +33,7 @@ public class HelloWorldController {
 		model.addAttribute("greeting", "Hello World Again, from Spring 4 MVC");
 		return "welcome";
 	}
-	
+
 	@RequestMapping(value = "/createUser", method = RequestMethod.POST)
 	public String createUser(@ModelAttribute("userForm") User user, BindingResult result, Model model) {
 		System.out.println("test again!!!!!" + user.getUserName());
